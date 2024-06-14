@@ -16,6 +16,8 @@
 		F2871C9E2C1B8C150039D554 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2871C9D2C1B8C150039D554 /* LoadingView.swift */; };
 		F2871CA22C1C98160039D554 /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2871CA12C1C98160039D554 /* RemoteImage.swift */; };
 		F2871CB12C1CD35E0039D554 /* AppetizerdetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2871CB02C1CD35E0039D554 /* AppetizerdetailView.swift */; };
+		F2871CB42C1CE28D0039D554 /* APButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2871CB32C1CE28D0039D554 /* APButton.swift */; };
+		F2871CB62C1CE3840039D554 /* XDismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2871CB52C1CE3840039D554 /* XDismissButton.swift */; };
 		F2AB762B2C1A64B600231347 /* AppetizersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2AB762A2C1A64B600231347 /* AppetizersApp.swift */; };
 		F2AB762D2C1A64B600231347 /* AppetizerTabview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2AB762C2C1A64B600231347 /* AppetizerTabview.swift */; };
 		F2AB762F2C1A64B700231347 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2AB762E2C1A64B700231347 /* Assets.xcassets */; };
@@ -35,6 +37,8 @@
 		F2871C9D2C1B8C150039D554 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		F2871CA12C1C98160039D554 /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
 		F2871CB02C1CD35E0039D554 /* AppetizerdetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerdetailView.swift; sourceTree = "<group>"; };
+		F2871CB32C1CE28D0039D554 /* APButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APButton.swift; sourceTree = "<group>"; };
+		F2871CB52C1CE3840039D554 /* XDismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDismissButton.swift; sourceTree = "<group>"; };
 		F2AB76272C1A64B600231347 /* Appetizers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Appetizers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2AB762A2C1A64B600231347 /* AppetizersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizersApp.swift; sourceTree = "<group>"; };
 		F2AB762C2C1A64B600231347 /* AppetizerTabview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerTabview.swift; sourceTree = "<group>"; };
@@ -138,6 +142,7 @@
 		F2871CAC2C1CA0510039D554 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F2871CB22C1CE2800039D554 /* Buttons */,
 				F2871CAF2C1CA07B0039D554 /* Image */,
 				F2871CAE2C1CA0720039D554 /* Cells */,
 				F2871CAD2C1CA05B0039D554 /* UIKit Components */,
@@ -167,6 +172,15 @@
 				F2871CA12C1C98160039D554 /* RemoteImage.swift */,
 			);
 			path = Image;
+			sourceTree = "<group>";
+		};
+		F2871CB22C1CE2800039D554 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				F2871CB32C1CE28D0039D554 /* APButton.swift */,
+				F2871CB52C1CE3840039D554 /* XDismissButton.swift */,
+			);
+			path = Buttons;
 			sourceTree = "<group>";
 		};
 		F2AB761E2C1A64B600231347 = {
@@ -279,6 +293,7 @@
 			files = (
 				F2871C902C1A6F930039D554 /* Appetizer.swift in Sources */,
 				F2871C962C1B4E9C0039D554 /* APError.swift in Sources */,
+				F2871CB42C1CE28D0039D554 /* APButton.swift in Sources */,
 				F2871CB12C1CD35E0039D554 /* AppetizerdetailView.swift in Sources */,
 				F2871C922C1A8D2C0039D554 /* AppetizerListCell.swift in Sources */,
 				F2871C982C1B567E0039D554 /* AppetizerListViewModel.swift in Sources */,
@@ -291,6 +306,7 @@
 				F2871C9A2C1B85330039D554 /* Alert.swift in Sources */,
 				F2AB76392C1A658A00231347 /* AppetizerListView.swift in Sources */,
 				F2AB763D2C1A65A500231347 /* OrderView.swift in Sources */,
+				F2871CB62C1CE3840039D554 /* XDismissButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
