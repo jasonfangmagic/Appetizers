@@ -3,7 +3,6 @@
 //  Appetizers
 //
 //  Created by Jason Fang on 6/12/24.
-//
 
 import SwiftUI
 
@@ -17,15 +16,15 @@ struct AccountView: View {
         NavigationView{
             Form{
                 Section(header: Text("Personal Info")) {
-                    TextField("First Name", text: $viewModel.firstName)
+                    TextField("First Name", text: $viewModel.user.firstName)
                   
-                    TextField("Last Name", text: $viewModel.lastName)
+                    TextField("Last Name", text: $viewModel.user.lastName)
                  
-                    TextField("First Name", text: $viewModel.email)
+                    TextField("First Name", text: $viewModel.user.email)
                         .keyboardType(.emailAddress)
                         .autocapitalization(.none)
                         .disableAutocorrection(true)
-                    DatePicker("Birthday", selection: $viewModel.birthDate, displayedComponents: .date)
+                    DatePicker("Birthday", selection: $viewModel.user.birthDate, displayedComponents: .date)
                     
                     Button{
                         viewModel.saveChanges()
@@ -35,14 +34,17 @@ struct AccountView: View {
                        
                     }
                 Section(header: Text("Request")) {
-                    Toggle("Extra Napkin", isOn: $viewModel.extraNapkins)
+                    Toggle("Extra Napkin", isOn: $viewModel.user.extraNapkins)
                        
-                    Toggle("Frequent Refills", isOn: $viewModel.frequentRefills)
+                    Toggle("Frequent Refills", isOn: $viewModel.user.frequentRefills)
                 }
                 .toggleStyle(SwitchToggleStyle(tint: Color.brandPrimary))
                
             }
                 .navigationTitle("🤣Account")
+        }
+        .onAppear(){
+            viewModel.retrieveUser()
         }
         .alert(item: $viewModel.alertItem) { alertItem in
             Alert(title: alertItem.title, message: alertItem.message, dismissButton: alertItem.dismissButton)
